@@ -26,4 +26,3 @@ def get_english_meaning
   # code goes here
 end
 
-puts get_japanese_emoticon("./lib/emoticons.yml", ":)")
