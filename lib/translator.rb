@@ -16,8 +16,8 @@ def get_japanese_emoticon(file_path, emoticon)
   library = load_library(file_path)
   result = nil
   library.each do |meaning, array|
-    if emoticon == array[0]
-      result = array[1]
+    if emoticon == array[1]
+      result = array[0]
     end
     result
   end
