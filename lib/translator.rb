@@ -1,5 +1,5 @@
 require "yaml"
-emoticons = YAML.load_file('emoticons.yml')
+YAML.load_file('emoticons.yml')
 
 puts emoticons.inspect
 
