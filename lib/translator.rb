@@ -8,11 +8,11 @@ def load_library(file_path)
     if !hash.has_key?("get_meaning")
       hash["get_meaning"] = {}
     end
-    
+
 
       if !hash["get_meaning"].has_key?(emoticon[0])
-        hash["get_meaning"][emoticon[0]] = 
-    
+        hash["get_meaning"][emoticon[0]] =
+
 end
 
 
