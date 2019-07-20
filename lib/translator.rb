@@ -9,13 +9,13 @@ def load_library(file_path)
       hash["get_meaning"] = {}
     end
     if !hash["get_meaning"].has_key?(array[1])
-      hash["get_meaning"][array[1]] = description[1]
+      hash["get_meaning"][array[1]] = description
     end
     if !hash.has_key?("get_emoticon")
       hash["get_emoticon"] = {}
     end
     if !hash["get_emoticon"].has_key?(array[0])
-      hash["get_emoticon"][array[0]] = description[0]
+      hash["get_emoticon"][array[0]] = description
     end
   end
   hash
