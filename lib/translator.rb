@@ -14,6 +14,7 @@ end
 
 def get_japanese_emoticon(file_path, emoticon)
   library = YAML.load_file(file_path)
+  result = nil
   library.each do |meaning, array|
     if emoticon == array[0]
       result = array[1]
