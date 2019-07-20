@@ -16,16 +16,16 @@ def get_japanese_emoticon(file_path, emoticon)
   library = load_library(file_path)
   result = nil
   library.each do |meaning, array|
-    if array.include?(emoticon)
-      result = array[0]
+    if emoticon == array[0]
+      result = array[1]
     else
-      result = "Sorry, that emoticon was not found"
+      "Sorry, that emoticon was not found"
     end
   end
   result
 end
 
 
-#def get_english_meaning
+def get_english_meaning
   # code goes here
-#end
+end
