@@ -18,11 +18,13 @@ def get_japanese_emoticon(file_path, emoticon)
   library.each do |meaning, array|
     if emoticon == array[0]
       result = array[1]
-    if !array.include?(emoticon)
-      return "Sorry, that emoticon was not found"
     end
+    
+      
+    end
+    result
   end
-  result
+  return "Sorry, that emoticon was not found"
 end
 
 
