@@ -1,5 +1,5 @@
 require "yaml"
-emoticons YAML.load(File.read("emoticons.yml"))
+emoticons = YAML.load(File.read("emoticons.yml"))
 
 p emoticons
 
