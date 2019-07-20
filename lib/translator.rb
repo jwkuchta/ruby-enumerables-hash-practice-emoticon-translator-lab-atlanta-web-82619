@@ -4,18 +4,18 @@ emoticons = YAML.load_file('./lib/emoticons.yml')
 def load_library(file_path)
   library = YAML.load_file(file_path)
   hash = {}
-  library.each do |description, array|
+  library.each do |meaning, array|
     if !hash.has_key?("get_meaning")
       hash["get_meaning"] = {}
     end
     if !hash["get_meaning"].has_key?(array[1])
-      hash["get_meaning"][array[1]] = description
+      hash["get_meaning"][array[1]] = meaning
     end
     if !hash.has_key?("get_emoticon")
       hash["get_emoticon"] = {}
     end
     if !hash["get_emoticon"].has_key?(array[0])
-      hash["get_emoticon"][array[0]] = description
+      hash["get_emoticon"][array[0]] = meaning
     end
   end
   hash
