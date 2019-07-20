@@ -12,7 +12,18 @@ def load_library(file_path)
 end
 
 
-def get_japanese_emoticon
+def get_japanese_emoticon(file_path, emoticon)
+  library = YAML.load_file(file_path)
+  library.each do |meaning, array|
+    if emoticon == array[0]
+      result = array[1]
+    else
+      "Sorry, that emoticon was not found"
+    end
+  end
+  result
+end
+
   # code goes here
 end
 
