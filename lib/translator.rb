@@ -5,22 +5,14 @@ def load_library(file_path)
   library = YAML.load_file(file_path)
   hash = {}
   library.each do |description, array|
-    array.each do |emoticon|
-      if !hash.has_key?("get_meaning")
-        hash["get_meaning"] = {}
-      end
-      if !hash["get_meaning"].has_key?(emoticon)
-        hash["get_meaning"]["#{e_emoticon}"] = description[0]
-      end
-      if !hash.has_key?("get_emoticon")
-        hash["get_emoticon"] = {}
-      end
-      if !hash["get_emoticon"].has_key?(j_emoticon)
-        hash["get_emoticon"]["#{j_emoticon}"] = description[1]
-      end
+    if !hash.has_key?("get_meaning")
+      hash["get_meaning"] = {}
     end
-  end
-  hash
+    
+
+      if !hash["get_meaning"].has_key?(emoticon[0])
+        hash["get_meaning"][emoticon[0]] = 
+    
 end
 
 
