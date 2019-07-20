@@ -8,14 +8,14 @@ def load_library(file_path)
     if !hash.has_key?("get_meaning")
       hash["get_meaning"] = {}
     end
-    if !hash["get_meaning"].has_key?(array[0])
-      hash["get_meaning"][array[0]] = description[0]
+    if !hash["get_meaning"].has_key?(array[1])
+      hash["get_meaning"][array[1]] = description[1]
     end
     if !hash.has_key?("get_emoticon")
       hash["get_emoticon"] = {}
     end
-    if !hash["get_emoticon"].has_key?(array[1])
-      hash["get_emoticon"][array[1]] = description[1]
+    if !hash["get_emoticon"].has_key?(array[0])
+      hash["get_emoticon"][array[0]] = description[0]
     end
   end
   hash
