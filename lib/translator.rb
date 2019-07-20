@@ -17,11 +17,8 @@ def load_library(file_path)
     if !hash["get_emoticon"].has_key?(array[1])
       hash["get_emoticon"][array[1]] = description[1]
     end
-
-
-      if !hash["get_meaning"].has_key?(emoticon[0])
-        hash["get_meaning"][emoticon[0]] =
-
+  end
+  hash
 end
 
 
